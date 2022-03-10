@@ -1,0 +1,2 @@
+06/data/trimmed_wav_files.zip filter=lfs diff=lfs merge=lfs -text
+06/data/fingerprints.npy filter=lfs diff=lfs merge=lfs -text

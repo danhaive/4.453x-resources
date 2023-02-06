@@ -77,7 +77,7 @@ def compute_permutation_matrix(
         fixities_dofs[dofs_indices] = support_nodes[node]
     # permutation map
     fixity_filter = fixities_dofs == 0
-    n_fixed_dofs = np.int(np.sum(fixities_dofs))
+    n_fixed_dofs = int(np.sum(fixities_dofs))
     n_free_dofs = n_dofs - n_fixed_dofs
     dof_indices = np.arange(n_dofs)
     id_map = np.zeros_like(dof_indices)

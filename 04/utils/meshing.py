@@ -43,7 +43,7 @@ def get_sphere_distance_function(
 ):
 
     bbox_arr = np.array([bbox[0], bbox[1]]).T
-    idx_extent = np.ceil(radius / min_feature_size).astype(np.int) + 1
+    idx_extent = np.ceil(radius / min_feature_size).astype(int) + 1
 
     x = np.arange(
         max(0, point_index[0] - idx_extent - 1),
